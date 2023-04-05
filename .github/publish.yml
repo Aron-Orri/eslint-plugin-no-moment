@@ -1,0 +1,24 @@
+name: Validate push
+on: [push]
+jobs:
+  publish:
+    name: Publish pkg
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: 'https://npm.pkg.github.com'
+      - name: 📥 Download deps
+        run: npm ci
+      - name: Publish the package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
