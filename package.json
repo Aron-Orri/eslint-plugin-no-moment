@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Aron-Orri/eslint-plugin-no-moment#readme",
   "devDependencies": {
     "eslint": "^8.37.0",
-    "no-moment": "file:rules/index.js"
+    "eslint-plugin-no-moment": "file:./rules"
   },
   "dependencies": {
     "vitest": "^0.29.8"
