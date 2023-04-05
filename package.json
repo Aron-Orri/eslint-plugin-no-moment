@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "vitest": "^0.29.8"
+  },
+  "publishConfig": {
+    "@Aron-Orri:registry": "https://npm.pkg.github.com"
   }
 }
