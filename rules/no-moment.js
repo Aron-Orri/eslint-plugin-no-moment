@@ -17,7 +17,7 @@ module.exports = {
         }
 
         return {
-            "ImportDeclaration": (node) => {
+            "ImportDeclaration Literal": (node) => {
                 if (node.value == "moment") return createReport
             },
             "VariableDeclarator > CallExpression Literal": (node) => {
