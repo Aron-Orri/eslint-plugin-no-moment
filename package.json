@@ -4,7 +4,7 @@
   "description": "",
   "main": "rules/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Aron-Orri/eslint-plugin-no-moment#readme",
   "devDependencies": {
-    "eslint": "^8.37.0"
+    "eslint": "^8.37.0",
+    "no-moment": "file:rules/index.js"
   },
   "dependencies": {
     "vitest": "^0.29.8"
