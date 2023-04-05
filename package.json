@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-no-moment",
+  "name": "@Aron-Orri/eslint-plugin-no-moment",
   "version": "1.0.0",
   "description": "",
   "main": "rules/index.js",
