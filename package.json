@@ -1,6 +1,6 @@
 {
   "name": "@Aron-Orri/eslint-plugin-no-moment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "rules/index.js",
   "scripts": {
